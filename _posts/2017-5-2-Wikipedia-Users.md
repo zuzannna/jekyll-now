@@ -1,9 +1,12 @@
 ---
 layout: post
-title: Wikipedia Users: web analytics
+title: Predicting non-functional water pumps in Tanzania
 ---
-data: Wikipedia data challenge 
-techniques: k-means clustering, clickthrough rate
+Data: Competition for [drivendata.org](https://www.drivendata.org/competitions/7/)  
+Techniques: Classification, random forest, PCA
+
+Part I- EDA and cleanup  
+Part II- Model selection and evaluation
 
 ---
 
