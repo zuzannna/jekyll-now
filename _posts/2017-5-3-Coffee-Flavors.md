@@ -2,7 +2,7 @@
 layout: post
 title: Automatic tagging of coffee reviews with NLP
 ---
-format: egg package
+format: egg package  
 techniques: ☕ Classification, NLP, SpaCy, automatic tagging 🤖
 ---
 
