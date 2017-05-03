@@ -3,7 +3,8 @@ layout: post
 title: Automatic tagging of coffee reviews with NLP
 ---
 Data: any text, .json format (coffee reviews found online)
-keywords: ☕ Classification, NLP, SpaCy, automatic tagging 🤖
+
+Keywords: ☕ Classification, NLP, SpaCy, automatic tagging 🤖
 ---
 
 ## Introduction
@@ -12,7 +13,7 @@ Classification and tagging of text samples has a number of applications in the i
 
 The goal of this library is to automatically tag flavor categories from the [SCAA flavor wheel](http://www.scaa.org/chronicle/wp-content/uploads/2016/01/SCAA_FlavorWheel.01.18.15.jpg) in text samples provided either as an input in the terminal or as a list of notes in a .json file. Specific use cases are described below.
 
-![flavor_wheel](images/flavor_wheel.png)
+![flavor_wheel]({{ site.baseurl }}/images/flavor_wheel.png)
 
 ## Usage
 
@@ -43,7 +44,7 @@ You can also call the function <code>coffee_flavors(text)</code> from within ano
 
 In order to validate my approach I manually tagged 18 review notes and compared it to the output of the <code>coffee_flavors.py</code>, which overalpped in 88%. Examining the errors was interesting. I noticed, for example, that *caramel* and *fruit* (but not *fruity*) was consistently missing in the output of the <code>coffee_flavors.py</code> while *green tea* was falsely tagged as *Green / Vegetative*. I discuss why these errors most likely occur and how to fix them in the section "Further steps".
 
-![validation](images/validation.png)
+![validation]({{ site.baseurl }}/images/validation.png)
 
 ## Next steps
 There is always something to improve. I think of this code as a prototype which deals with simplest cases. Let me walk you through the matching process.
