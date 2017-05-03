@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 📚👀User analytics on Wikipedia EL data 💻
+title: 📚👀User analytics on Wikipedia event-logging data 💻
 ---
-
-Data: here   
-Techniques: k-means clustering, clickthrough rate  
+data: here   
+techniques: k-means clustering, clickthrough rate 
+ 
 ---
 
 A lot of companies rely on event logging (EL) to track a variety of performance and usage metrics to help make decisions. In this analysis I dove into one week of Wikipedia users' data to answer the following questions:
