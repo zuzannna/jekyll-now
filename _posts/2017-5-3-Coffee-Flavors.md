@@ -2,9 +2,8 @@
 layout: post
 title: Automatic tagging of coffee reviews with NLP
 ---
-Data: any text, .json format (coffee reviews found online)
-
-Keywords: ☕ Classification, NLP, SpaCy, automatic tagging 🤖
+format: egg package
+techniques: ☕ Classification, NLP, SpaCy, automatic tagging 🤖
 ---
 
 ## Introduction
