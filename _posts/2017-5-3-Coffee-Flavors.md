@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Automatic tagging of coffee reviews with NLP
+title: 🤖Automatic tagging of coffee reviews with NLP☕ 
 ---
 format: egg package  
-techniques: ☕ Classification, NLP, SpaCy, automatic tagging 🤖  
+techniques: Classification, NLP, SpaCy, automatic tagging   
 
 ---
 
