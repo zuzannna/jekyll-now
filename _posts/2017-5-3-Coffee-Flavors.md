@@ -1,3 +1,11 @@
+---
+layout: post
+title: Automatic tagging of coffee reviews with NLP
+---
+Data: any text, .json format (coffee reviews found online)
+keywords: ☕ Classification, NLP, SpaCy, automatic tagging 🤖
+---
+
 ## Introduction
 
 Classification and tagging of text samples has a number of applications in the industry: customer service, processing of text orders or archiving, to name just a few. Doing it by hand takes a lot of time and requires sustained attention😴. Thankfully, repetitive and boring tasks are one of the things computers are **really** good at 💻 💯. 
