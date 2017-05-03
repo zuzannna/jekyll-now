@@ -2,7 +2,7 @@
 layout: post
 title: Wikipedia Users: web analytics
 ---
-data: <a href="https://github.com/zuzannna/Discovery-Hiring-Analyst-2016">Wikipedia data challenge</a>
+data: [Wikipedia data challenge](https://github.com/zuzannna/Discovery-Hiring-Analyst-2016) 
 techniques: k-means clustering, clickthrough rate
 
 ---
