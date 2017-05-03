@@ -68,7 +68,7 @@ These are some suggestions of possible improvements which due to time constraint
 
 To install the requirements with pip (except for Python), type in the main directory:
 
-<code> pip install -r requirements.txt </code>
+    pip install -r requirements.txt </code>
 
 ## Testing
 
