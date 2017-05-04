@@ -28,7 +28,7 @@ This is why I in the analysis below I used the following normalization method:
 **tools:** numpy, pandas, matplotlib, GeoPandas
 
 
-Deliverable is the code and the following map, which can be accessed at: https://zuzanna.carto.com/viz/999bdc1a-01c1-11e7-9bf4-0e3ff518bd15/map.  
+Deliverable is the code and the following **interactive map**, which can be accessed [here](https://zuzanna.carto.com/viz/999bdc1a-01c1-11e7-9bf4-0e3ff518bd15/map) at my Carto profile.  
 
 ![map_image]({{ site.baseurl }}/images/map_image.png)
 
