@@ -2,7 +2,7 @@
 layout: post
 title: 🗺️Geospatial analysis of donations💸  
 ---
-format: egg package  
+data: transaction data
 techniques: GeoPandas, normalization, big data   
 
 ---
@@ -21,7 +21,9 @@ This is why I in the analysis below I used the following normalization method:
 
 **purpose:** provide a map of small donors normalized by the income to direct marketing campaign more efficiently, especially outside of big cities.
 
-**data:** I used a subset of transactions data narrowed down to 2016 by executing "cat donations_post_gt.csv | grep 2016 >> donations_post_gt_2016.csv" in the Terminal. 
+**data:** I used a subset of transactions data narrowed down to 2016 by executing in the Terminal:
+
+    cat donations_post_gt.csv | grep 2016 >> donations_post_gt_2016.csv" 
 
 **tools:** numpy, pandas, matplotlib, GeoPandas
 
