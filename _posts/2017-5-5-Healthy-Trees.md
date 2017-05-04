@@ -1,5 +1,14 @@
+---
+layout: post
+title: 🌳🌳Geospatial analysis of trees health🏙   
+---
+data: transaction data  
+techniques: big data, logistic regression, random forest
+
+---
+
 # Healthy NYC Trees
-![data_jam](images/data_jam.png)
+![data_jam]({{ site.baseurl }}/images/data_jam.png)
 
 How can we use the Street Tree Census Data to more efficiently plan for the long term health of the urban forest? As part of TreesCount! 2015 on the National Day of Civic Hacking (06/04/16), NYC Parks has engaged with  voluntreers, tree-oriented community groups, and non-profit partners to identify how street tree census data can help improve equitable care of our urban forest. 
 
@@ -11,7 +20,7 @@ Trees in urban settings face many challenges from both people and the environmen
 
 My goal was to explore Street Tree Census data to help understand who collects the most data, where stewardship efforts are most needed and what is the influence of seasonality on volunteer engagement. Turns out, even though the majority of data was collected by professional staff, a big chunk of it we have thanks to volunteers. By visual inspection of the distribution of data entries across boroughs we can see an interesting pattern emerge:
 
-![who_collected](images/who_collected.png)
+![who_collected]({{ site.baseurl }}/images/who_collected.png)
 
 **Insights:** Looks like Manhattan, Brooklyn and Queens were favored by volunteer teams, with NYC Parks staff & TressCount staff leading the collection in the other boroughs. This came as a big surprise to me - in three out of five boroughs volunteers contributed between 45000 and 50000 entries! In Manhattan the difference is particurarly striking, volunteers entered approximately twice as many samples into the system as staff members. By contrast, in Bronx and Staten Island it was largely by staff efforts that we have a detailed map of the trees.
 
@@ -23,7 +32,7 @@ Are there any seasonal trends? Having data from just one year we can't use any r
 
 The map below represents data entries within five boroughs recorded by three groups: staff (NYC Parks & TreesCount, in different shades of blue) and volunteers (green). Missing entries are plotted in grey. You can play around by changing the date of the records in the lower left corner. **The map above is a static screenshot, in order to see seasonal changes you need to click on the link**
 
-![map_seasonality](images/map_seasonality.png)
+![map_seasonality]({{ site.baseurl }}/images/map_seasonality.png)
 
 **Source:** https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map 
 
@@ -32,7 +41,7 @@ The map below represents data entries within five boroughs recorded by three gro
 
 With the 1995 and 2005 street tree censuses, NYC Parks has been able to catalyze major advances in urban forest management, making science-based operational decisions and quantify the benefits of the urban forest. The coverage of the data is awesome:
 
-![map_trees](images/map_trees.png)
+![map_trees]({{ site.baseurl }}/images/map_trees.png)
 
 **Source:** https://zuzanna.carto.com/viz/7317a0b0-d77d-11e6-83c6-0e05a8b3e3d7/public_map
 
@@ -44,23 +53,23 @@ Is there a relationship between species and health? Let's look at a plot of simp
 
 In the first pass I will use just a subset of features choosing the ones that look like most likely candidates to influence trees health, such as trunk diameter, health status, location and species.
 
-![overall_health](images/overall_health.png)
+![overall_health]({{ site.baseurl }}/images/overall_health.png)
 
 Is there a relationship between stewardship signs and health or between guards and health?
 
-![stewardship_guards_health](images/stewardship_guards_health.png)
+![stewardship_guards_health]({{ site.baseurl }}/images/stewardship_guards_health.png)
 
 Doesn't seem like it. Just from visual inspection seems like, proportionally, there are more healthy than in "poor condition" trees among those that have no guards whatsoever compared to those that do have (helpful or harmful).
 How about trees' diameter? Does it look like there is a difference on any of the above features depending on trees' diameter?
 
-![diameter](images/diameter.png)
+![diameter]({{ site.baseurl }}/images/diameter.png)
 
 **Insights:** Well, who would have guessed? Dead trees have a smaller diameter than alive ones! Hah, but there could be something in there - it could mean, for example, that freshly planted trees which have a small diameter are in highest risk. This makes more sense when we look at the rightmost figure - it turns out that trees labeled in "good" health have also higher diameter. This relationship is further explored with the logistic regression and random forest models (you can read more about them in the python notebook).
 
 What about different species? Are some of them more likely to be at health risk?
 
-![species_good](images/species_good.png)
-![species_poor](images/species_poor.png)
+![species_good]({{ site.baseurl }}/images/species_good.png)
+![species_poor]({{ site.baseurl }}/images/species_poor.png)
 
 **Insights:** Visual inspection suggests there aren't striking differences between distribution of trees labeled as "healthy" versus "in fair health" (compare second and third plots), however there are some species that seem to be more prone to fall into the unhealthy category. For example, Cherry, Ginkgo or Little Leaf Linden's bars seem to be higher in the third compared to second plot. This might be simply because it's easier to notice the difference in species that are common in the data set (and are subsequently represented with higher bars) or that other species are less likely to be labeled as unhealthy.
 
@@ -68,11 +77,11 @@ What about different species? Are some of them more likely to be at health risk?
 
 **Logistic function** is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. There is nothing magical about it, in fact, you could also use <a href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">cumulative normal</a>, <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy</a>, <a href="https://en.wikipedia.org/wiki/Gumbel_distribution">Gumbel</a> or <a href="https://en.wikipedia.org/wiki/Weibull_distribution">Weibull</a> (they differ slightly when it comes to asymptotes and other parameters). Basically, it can be described as:
 
-![logistic](images/logistic_plot.png)
+![logistic]({{ site.baseurl }}/images/logistic_plot.png)
 
 Where **k** is the slope of the function (how steep it is) and **x0** is the point where the *y* value is exactly 0.5 (sometimes called threshold). **Threshold** is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the **slope**) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. 
 
-![logistic](images/logistic.png)
+![logistic]({{ site.baseurl }}/images/logistic.png)
 
 Following the tumor example, lets say that the *x* axis is the size of tissue cluster and *y* the probability that it is a malignant tumor. Then, if they have a different threshold but the same slope the two curves could represent two different cell types which typically have different sizes (therefore, are shifted on the *x* axis) but follow a similar process when growing into a tumor (by the way, I have no idea about cancer, this is a made up example). If, however, they have different slope but the same threshold it means that for one cell type (with steeper slope) the probability of being a malignant tumor increases faster with size.
 
@@ -80,13 +89,13 @@ In classification tasks the threshold is the boundary of decision: that's the po
 
 The most important features that increase the odds of that the tree will get "unhealthy" label:
 
-![odds_high](images/odds_high_plot.png)
+![odds_high]({{ site.baseurl }}/images/odds_high_plot.png)
 
 The font is small, but the top ones are species: 79, neighborhood: 108, 124, 125 and 98. For a similar plot which shows the odds that the tree will get "healthy" label. In short, the top ones are species 44, and neighborhoods 81, 95, 73 and 58.
 
 Let's look at the **confusion matrix** to assess the performance of the model. It gives us information about *hits* (true positives), *false alarms* (false positives), *misses* (false negatives) and *correct rejections* (true negatives). This distinction comes from signal detection theory - if we imagine two overlapping distributions, e.g. with healthy and unhealthy trees sitting on an axis with, for simplicity, continous variable like *trunk size*, we could determine where each of the components of the confusion matrix comes from by applying a criterion threshold:
 
-![SDT](images/SDT.png)
+![SDT]({{ site.baseurl }}/images/SDT.png)
 
 **Source:** David Heeger's <a href = "http://www.cns.nyu.edu/~david/handouts/sdt-advanced.pdf">notes</a> about Signal Detection Theory
 
