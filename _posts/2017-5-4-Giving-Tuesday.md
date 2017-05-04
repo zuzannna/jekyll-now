@@ -27,6 +27,8 @@ This is why I in the analysis below I used the following normalization method:
 
 **tools:** numpy, pandas, matplotlib, GeoPandas
 
+**code** on my [github](https://github.com/zuzannna/-GivingTuesday)
+
 
 Deliverable is the code and the following **interactive map**, which can be accessed [here](https://zuzanna.carto.com/viz/999bdc1a-01c1-11e7-9bf4-0e3ff518bd15/map) at my Carto profile.  
 
@@ -34,3 +36,4 @@ Deliverable is the code and the following **interactive map**, which can be acce
 
 #Insights:
 Interestingly, when we look at adjusted donation amounts we see that big cities no longer dominate the giving drive. For example, there are ZIP codes areas in south Texas, Utah, Montana and Idaho which donate as much or more than urbanized centers on the West and East Coast. By hovering over the map we can inspect specific zip codes, the number of households within the area and the total amount of donations.
+
