@@ -2,7 +2,7 @@
 layout: post
 title: 🗺️Geospatial analysis of donations💸  
 ---
-data: transaction data
+data: transaction data  
 techniques: GeoPandas, normalization, big data   
 
 ---
