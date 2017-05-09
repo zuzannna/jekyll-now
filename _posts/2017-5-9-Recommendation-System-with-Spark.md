@@ -3,7 +3,7 @@ layout: post
 title: ✍️Recommendation systems with Apache Spark🤔
 ---
 data: [Amazon product data](http://jmcauley.ucsd.edu/data/amazon/)   
-techniques: big data, collaborative filtering, ALS, Spark
+techniques: big data, collaborative filtering, ALS, Spark   
 
 ---
 Spring has sprung in NYC and it's time for gardening! But how to buy the right hose when you're a total gardening newbie?
@@ -41,28 +41,28 @@ Using Apache Spark makes a lot of sense when we're using iterative algorithms (s
 ### Running Apache Spark with Jupyter Notebook:
 
 It's not hard at all, actually! Make sure SSH is enabled on your machine, your Java is up to date, and [download](http://spark.apache.org/downloads.html) + install Spark. In my case, in order to run it I need to execute in the Terminal:
-<pre>
+
     $ export PATH=$PATH:/usr/local/spark/bin:/usr/local/spark/sbin
-</pre>
+
 followed by:
-<pre>
+
     $ start-all.sh
-</pre>
+
 and to lanch Jupyter Notebook with Spark:
-<pre>
+
     $ PYSPARK_DRIVER_PYTHON=ipython PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser --ip="*"" pyspark --master local[*]
-</pre>
+
 
 Then, Jupyter Notebook will run on <code>localhost:8888</code>, your Spark cluster UI on <code>localhost:8080</code> and Spark Jobs on <code>localhost:4040</code>. 
 Those tips come from **Austin Ouyang** who wrote a great step-by-step [intro](http://blog.insightdatalabs.com/jupyter-on-apache-spark-step-by-step/) and gave a two day workshop at Insight Labs that I attended (and you can sign up for too:).
 
 ### Machine learning and collaborative filtering with Spark: 
 
-http://spark.apache.org/docs/latest/mllib-guide.html
+[Spark mllib docs](http://spark.apache.org/docs/latest/mllib-guide.html)
 
-https://spark.apache.org/docs/latest/mllib-collaborative-filtering.html
+[Spark mllib docs on collaborative filtering](https://spark.apache.org/docs/latest/mllib-collaborative-filtering.html)
 
-A great tutorial on recommendations systems and Spark with MovieLens data: https://databricks-training.s3.amazonaws.com/movie-recommendation-with-mllib.html
+A great tutorial on recommendations systems and Spark with [MovieLens data](https://databricks-training.s3.amazonaws.com/movie-recommendation-with-mllib.html)
 
 # Requirements:
 
@@ -75,9 +75,8 @@ A great tutorial on recommendations systems and Spark with MovieLens data: https
 7. <a href="http://scikit-learn.org/stable/">scikit learn</a>
 
 To install all of them (except Python) using pip run:
-<pre>
+
  pip install -r requirements.txt
-</pre>
 
 
 
