@@ -4,7 +4,7 @@ This is a short step-by-step tutorial on collaborative filtering based recommend
 
 For instructional purposes, the code is not optimized for speed. 
 
-![recommendation_systems](recommendation_systems.jpg)
+![recommendation_systems]({{ site.baseurl }}/images/recommendation_systems.jpg)
 
 Source of the image (I added scribbles myself;): _"Recommendation systems: Principles, methods and evaluation"_ by Isinkayea, Folajimib and Ojokohc, http://doi.org/10.1016/j.eij.2015.06.005
 
