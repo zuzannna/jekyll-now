@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-What makes our brains tick? My PhD research explored the idea that we are driven to focus on certain areas of our surrounding while ignoring the others. What determines this trade-off and to what extent can we predict it? I investigated these questions with a mixture of computational modeling and experimentation, focusing on oculomotor decision making. 
+I'm a data scientist, former psychologist with neuroscience background and experience in UX research.
 
-As a Data Science Fellow at Insight I applied my skills to design, implement and validate an engine which uses natural language processing to produce recommendations of artworks based on curatorial descriptions. You can play with it [here](http://vango.hopto.org) and got through [this](https://www.slideshare.net/ZuzannaKyszejko/zuzannaklyszejkovango) short presentation to find out more about the details.
+My PhD focused on designing experimental and computational methods to explain how human brain processes 💰lucrative💰 locations in the 2D visual space using real-time eye tracking👀. These days I'm happier to apply my skills to projects outside the lab. I've worked on projects in classification, regression (trees), clustering (wikipedia), NLP (coffee, vango), recommender systems (vango, gardening), time series, AB testing (loyalty program, wikipedia), geospatial analysis (trees and giving tuesday), ETL (loyalty), web analytics (wikipedia) and scraping(vango).
 
-Feel free to reach out to me about data science, experimental design, user testing and eye tracking or browse my github at https://github.com/zuzannna.
+As a Data Science Fellow at [Insight](http://insightdatascience.com) within 3 weeks I implemented and validated an engine which uses NLP and principal component analysis (PCA) to produce recommendations of artworks based on curatorial descriptions. You can play with a prototype hosted on AWS using Flask [here](http://vango.hopto.org) and read a short [presentation](https://www.slideshare.net/ZuzannaKyszejko/zuzannaklyszejkovango) to find out more about the details.
+
+My undergraduate background was in cognitive neuroscience with a minor in human-computer interaction. I love participating in hackathons (in fact, I [organized one](wimldsdatadive.com/hackathons/2)) recently) and I am passionate about science outreach - I volunteered for years all around NYC teaching neuroscience in elementary schools. Feel free to reach out to me about data science, experimental design, user testing and eye tracking and browse my github at https://github.com/zuzannna.
