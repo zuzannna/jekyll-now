@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🤔✍️Recommendation systems with Apache Spark🌳🌿
+title: ✍️Recommendation systems with Apache Spark🤔
 ---
 data: [Amazon product data](http://jmcauley.ucsd.edu/data/amazon/)
 techniques: big data, collaborative filtering, ALS, Spark
