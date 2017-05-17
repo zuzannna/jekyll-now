@@ -57,7 +57,7 @@ Full dataset can be accessed <a href="https://github.com/zuzannna/Discovery-Hiri
 
 The dataset comes from a <a href="https://meta.wikimedia.org/wiki/Schema:TestSearchSatisfaction2">tracking schema</a> that the Wikimedia Foundation uses for assessing user satisfaction. Desktop users are randomly sampled to be anonymously tracked by this schema which uses a "I'm alive" pinging system that we can use to estimate how long our users stay on the pages they visit. The dataset contains just a little more than a week of EL data.
 
-![data_wiki]({{ site.baseurl }}/images/data_wiki.png)
+![data_wiki]({{ site.baseurl }}/images/wiki_data.png)
 
 The following are possible values for an event's action field:
 
@@ -68,7 +68,7 @@ The following are possible values for an event's action field:
 
 ## Example Session
 
-![data_wiki]({{ site.baseurl }}/images/example_session.png)
+![example_session]({{ site.baseurl }}/images/example_session.png)
 
 This user's search query returned 7 results, they clicked on the first result, and stayed on the page between 40 and 50 seconds. (The next check-in would have happened at 50s.)
 
