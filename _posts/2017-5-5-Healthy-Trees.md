@@ -30,11 +30,11 @@ I suspected that if we look at the map it will be the farthest neighborhoods fro
 
 Are there any seasonal trends? Having data from just one year we can't use any reliable quantitative methods, such as ARIMA, so our observations are purely speculative.
 
-The map below represents data entries within five boroughs recorded by three groups: staff (NYC Parks & TreesCount, in different shades of blue) and volunteers (green). Missing entries are plotted in grey. You can play around by changing the date of the records in the lower left corner. **The map above is a static screenshot, in order to see seasonal changes you need to click on the link**
+The map below represents data entries within five boroughs recorded by three groups: staff (NYC Parks & TreesCount, in different shades of blue) and volunteers (green). Missing entries are plotted in grey. You can play around by changing the date of the records in the lower left corner when you access the map on my [Carto profile](https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map). 
 
 ![map_seasonality]({{ site.baseurl }}/images/map_seasonality.png)
 
-**Source:** https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map 
+**Source:** To play with the map, click [here](https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map)
 
 
 # How can we use the Street Tree Census Data to more efficiently plan for the long term health and growth of the urban forest?
@@ -43,7 +43,7 @@ With the 1995 and 2005 street tree censuses, NYC Parks has been able to catalyze
 
 ![map_trees]({{ site.baseurl }}/images/map_trees.png)
 
-**Source:** https://zuzanna.carto.com/viz/7317a0b0-d77d-11e6-83c6-0e05a8b3e3d7/public_map
+**Source:** [My Carto profile](https://zuzanna.carto.com/viz/7317a0b0-d77d-11e6-83c6-0e05a8b3e3d7/public_map)
 
 Looks like we have a solid coverage across the city, with clear gaps where parks* (e.g. Central Park) or airports are - which is a good sanity check. For now, I'm not looking at the density of the trees in the city, just checking if there are any obvious flaws to the dataset.
 
@@ -107,4 +107,4 @@ Let's look at the **confusion matrix** to assess the performance of the model. I
 
 # Data 🌳😀
 
-The dataset is available at https://nycopendata.socrata.com, feel free to play with it yourself, it's very well documented.
+The dataset is available [here](https://nycopendata.socrata.com), feel free to play with it yourself, it's very well documented.
