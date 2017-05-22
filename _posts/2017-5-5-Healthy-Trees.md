@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 🌳🌳Geospatial analysis of trees health🏙   
+title: 🌳🌳How (un)healthy are NYC trees? 🏙   
 ---
 data: [2015 NYC Street Tree Census](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh)  
-techniques: big data, logistic regression, random forest
+techniques: geospatial analysis, big data, logistic regression, random forest
 
 ---
 
