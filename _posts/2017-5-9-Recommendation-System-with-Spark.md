@@ -56,6 +56,8 @@ and to lanch Jupyter Notebook with Spark:
 Then, Jupyter Notebook will run on <code>localhost:8888</code>, your Spark cluster UI on <code>localhost:8080</code> and Spark Jobs on <code>localhost:4040</code>. 
 Those tips come from **Austin Ouyang** who wrote a great step-by-step [intro](http://blog.insightdatalabs.com/jupyter-on-apache-spark-step-by-step/) and gave a two day workshop at Insight Labs that I attended (and you can sign up for too:).
 
+To see how to run ALS on Spark using Python, proceed to [Jupyter Notebook on my github](https://github.com/zuzannna/GardeningRecommendations/blob/master/GardeningToolsRecommender.ipynb).
+
 ### Machine learning and collaborative filtering with Spark: 
 
 [Spark mllib docs](http://spark.apache.org/docs/latest/mllib-guide.html)
