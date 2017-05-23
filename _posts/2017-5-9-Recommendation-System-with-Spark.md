@@ -8,7 +8,7 @@ techniques: big data, collaborative filtering, ALS, Spark
 ---
 Spring has sprung in NYC and it's time for gardening! But how to buy the right hose when you're a total gardening newbie?
 
-This is a short step-by-step tutorial on collaborative filtering based recommendation systems on <a href="http://jmcauley.ucsd.edu/data/amazon/">Amazon product data</a>. Detailed instructions are included in the Jupyter Notebook (GardeningToolsRecommender.ipynb), so please check it out. Below, I included materials I found super useful to learn about recommendation systems & Apache Spark (which is used to paralelize alternative least squares at the end of the notebook).
+This is a short step-by-step tutorial on collaborative filtering based recommendation systems on <a href="http://jmcauley.ucsd.edu/data/amazon/">Amazon product data</a>. Detailed instructions are included in the [Jupyter Notebook on my github](https://github.com/zuzannna/GardeningRecommendations/blob/master/GardeningToolsRecommender.ipynb), so please check it out. Below, I included materials I found super useful to learn about recommendation systems & Apache Spark (which is used to paralelize alternative least squares at the end of the notebook).
 
 For instructional purposes, the code is not optimized for speed. 
 
